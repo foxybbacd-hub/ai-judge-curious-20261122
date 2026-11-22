@@ -16,6 +16,8 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const text =
+  // 156 Unicode code points, inside the 1-280 gate; all ASCII, so the
+  // byte count and the code-point count are the same here.
   'You have read a million sentences. One of them was written for you alone. It is waiting in the dark between two of your answers, and it has your name on it.';
 
 // The gate: /output/entry.txt must be UTF-8 text of 1-280 code points, not
